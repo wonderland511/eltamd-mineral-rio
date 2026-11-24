@@ -88,6 +88,7 @@ th,td{text-align:left;padding:14px 12px;border-bottom:1px solid var(--line);vert
 th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:600}
 tr:last-child td{border-bottom:0}
 .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.price.num{white-space:normal}
 .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
 
 .note{display:flex;gap:14px;align-items:flex-start;background:var(--card2);border-radius:16px;padding:16px 18px;margin-top:14px}
@@ -123,7 +124,7 @@ footer a{color:var(--muted)}
   <div class="verdict reveal d1">
     <div class="big">✓</div>
     <div>
-      <b>Нужен 100% минеральный крем? Берите UV Restore SPF 40.</b>
+      <b>Нужен 100% минеральный крем? Берите UV Restore SPF 40. Он ещё и самый дешёвый: R$ 242,08 ($40,81) на Mercado Livre.</b>
       <p>В нём только минеральные фильтры: оксид цинка 15% и диоксид титана 2%. В UV Clear SPF 46, кроме цинка 9%, есть октиноксат 7,5%, а это химический фильтр, так что крем гибридный.</p>
     </div>
   </div>
@@ -161,78 +162,90 @@ footer a{color:var(--muted)}
     <figure class="sticker" title="Зевающий котик"><img src="img/cat.jpg" alt="Смешной котик широко зевает" width="112" height="112"></figure>
     <h2 class="reveal">Предложения по вашим ссылкам</h2>
   </div>
-  <p class="muted reveal" style="margin-top:-6px">Mercado Livre и Magalu закрывают страницы от автоматического просмотра (вход в аккаунт или ошибка 403). Поэтому данные Magalu взяты с вашего скриншота, а по Mercado Livre их пока нет.</p>
+  <p class="muted reveal" style="margin-top:-6px">Данные взяты с ваших скриншотов от 24.11.2026 (Mercado Livre около 14:48). Сами страницы закрыты от автоматического просмотра.</p>
 
   <div class="offers">
+    <div class="card offer win reveal d1" style="border-color:color-mix(in srgb,var(--ok) 55%,var(--line))">
+      <button class="thumb" data-lb="0" aria-label="Увеличить фото"><img src="img/uv-restore.jpg" alt="EltaMD UV Restore SPF 40" loading="lazy"></button>
+      <div>
+        <h3>Mercado Livre · Eltamd – Protetor Solar UV Restore FPS 40 (48 г)</h3>
+        <div class="chips"><span class="chip" style="background:var(--ok-soft);color:var(--ok)">✓ 100% минеральный</span><span class="chip">Internacional</span><span class="chip">Black Friday −6%</span></div>
+        <div class="price num">$40,81 <small>за 1 шт. (R$ 242,08)</small></div>
+        <div class="muted" style="font-size:15px;margin-top:4px">Цена без скидки: $43,47 (R$ 257,84). Картой: 12 × R$ 23,96 = R$ 287,52 ($48,47), это с процентами. На флаконе на фото в объявлении написано «100% Mineral Actives». Доставка, налоги и остаток на складе на скриншоте не видны.</div>
+      </div>
+    </div>
+
     <div class="card offer reveal d1">
       <button class="thumb" data-lb="1" aria-label="Увеличить фото"><img src="img/uv-clear.jpg" alt="EltaMD UV Clear SPF 46" loading="lazy"></button>
       <div>
+        <h3>Mercado Livre · Protetor Solar Facial UV Clear SPF 46 50,27 мл</h3>
+        <div class="chips"><span class="chip red">Не 100% минеральный</span><span class="chip">Internacional · из США</span><span class="chip">В наличии 50+</span><span class="chip warn">Продано: 1</span></div>
+        <div class="price num">$46,20 <small>за 1 шт. (R$ 274,02)</small></div>
+        <div class="muted" style="font-size:15px;margin-top:4px">Налоги: импортная пошлина R$ 0 и ICMS R$ 56,17 ($9,47), оплачиваются вместе с покупкой по программе Remessa Conforme. Если ICMS добавляется к цене, выйдет R$ 330,19 ($55,67) за шт. Доставка бесплатная, с 29.11 по 26.12, как акция на первую покупку. Картой: 12 × R$ 26,81.</div>
+      </div>
+    </div>
+
+    <div class="card offer reveal d2">
+      <button class="thumb" data-lb="1" aria-label="Увеличить фото"><img src="img/uv-clear.jpg" alt="EltaMD UV Clear SPF 46" loading="lazy"></button>
+      <div>
+        <h3>Mercado Livre · Protetor Solar Facial Eltamd UV Clear FPS 46 48 г</h3>
+        <div class="chips"><span class="chip red">Не 100% минеральный</span><span class="chip warn">Осталась 1 шт.</span><span class="chip">Продавец JELI7114582, 25+ продаж</span></div>
+        <div class="price num">$42,15 <small>за 1 шт. (R$ 250,00)</small></div>
+        <div class="muted" style="font-size:15px;margin-top:4px">Продаётся внутри Бразилии: бесплатная доставка от R$ 19, приходит в пятницу или субботу (акция на первую покупку), можно бесплатно забрать в пункте Mercado Livre. Картой: 6 × R$ 41,67 без процентов. <b>10 шт. здесь не купить: в наличии последняя.</b></div>
+      </div>
+    </div>
+
+    <div class="card offer reveal d2">
+      <button class="thumb" data-lb="1" aria-label="Увеличить фото"><img src="img/uv-clear.jpg" alt="EltaMD UV Clear SPF 46" loading="lazy"></button>
+      <div>
         <h3>Magalu · EltaMD UV Clear Face SPF 46, 50 мл, помпа</h3>
-        <div class="chips"><span class="chip red">Не 100% минеральный</span><span class="chip">Compra internacional</span><span class="chip">Налоги включены</span><span class="chip">Продавец: nocnocestadosunidos</span><span class="chip warn">Отзывов 0 (новый товар)</span></div>
+        <div class="chips"><span class="chip red">Не 100% минеральный</span><span class="chip">Compra internacional</span><span class="chip">Налоги включены</span><span class="chip">Продавец nocnocestadosunidos</span><span class="chip warn">Отзывов 0</span></div>
         <div class="price num">$61,76 <small>за 1 шт. при оплате Pix (R$ 366,33)</small></div>
-        <div class="muted" style="font-size:15px;margin-top:4px">Картой: $66,41 (R$ 393,90) в 7 платежей по R$ 56,27 без процентов, или картой Magalu 10 × R$ 39,39. Цена без скидки: $71,23 (R$ 422,50).</div>
+        <div class="muted" style="font-size:15px;margin-top:4px">Картой: $66,41 (R$ 393,90) в 7 платежей по R$ 56,27 без процентов. Цена без скидки: $71,23 (R$ 422,50). Стоимость доставки не рассчитана: на скриншоте не введён CEP.</div>
       </div>
       <a class="cta" href="https://www.magazineluiza.com.br/protetor-solar-eltamd-uv-clear-face-spf-46-50-ml-bomba-sem-oleo/p/fj3e84cgd4/pf/psfc/" target="_blank" rel="noopener">Открыть ↗</a>
     </div>
+  </div>
 
-    <div class="card offer pending reveal d2">
-      <div class="thumb empty">Фото появится, когда будут данные</div>
-      <div>
-        <h3>Mercado Livre · карточка MLB2067344548</h3>
-        <div class="chips"><span class="chip warn">Данные не получены</span></div>
-        <p class="muted" style="margin:8px 0 0;font-size:15px">Какой крем в карточке, цена, продавец и доставка пока неизвестны: сайт требует вход в аккаунт.</p>
-      </div>
-      <a class="cta ghost" href="https://meli.la/28CBw5g" target="_blank" rel="noopener">Открыть ↗</a>
-    </div>
-
-    <div class="card offer pending reveal d2">
-      <div class="thumb empty">Фото появится, когда будут данные</div>
-      <div>
-        <h3>Mercado Livre · карточка MLB2073868382</h3>
-        <div class="chips"><span class="chip warn">Данные не получены</span></div>
-        <p class="muted" style="margin:8px 0 0;font-size:15px">Какой крем в карточке, цена, продавец и доставка пока неизвестны.</p>
-      </div>
-      <a class="cta ghost" href="https://meli.la/2eFBVGF" target="_blank" rel="noopener">Открыть ↗</a>
-    </div>
-
-    <div class="card offer pending reveal d3">
-      <div class="thumb empty">Фото появится, когда будут данные</div>
-      <div>
-        <h3>Mercado Livre · объявление MLBU5968897454</h3>
-        <div class="chips"><span class="chip warn">Данные не получены</span></div>
-        <p class="muted" style="margin:8px 0 0;font-size:15px">Какой крем в карточке, цена, продавец и доставка пока неизвестны.</p>
-      </div>
-      <a class="cta ghost" href="https://meli.la/31zTZ6z" target="_blank" rel="noopener">Открыть ↗</a>
+  <div class="card reveal d3" style="margin-top:14px">
+    <h3 style="margin-bottom:8px">Ваши ссылки Mercado Livre</h3>
+    <p class="muted" style="margin:0 0 12px;font-size:15px">Номера объявлений на скриншотах не видны, поэтому нельзя сказать, какая ссылка ведёт на какую карточку выше.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <a class="cta ghost" href="https://meli.la/28CBw5g" target="_blank" rel="noopener">Ссылка 1 ↗</a>
+      <a class="cta ghost" href="https://meli.la/2eFBVGF" target="_blank" rel="noopener">Ссылка 2 ↗</a>
+      <a class="cta ghost" href="https://meli.la/31zTZ6z" target="_blank" rel="noopener">Ссылка 3 ↗</a>
     </div>
   </div>
 </section>
 
 <section>
-  <h2 class="reveal">Стоимость 10 баночек и доставка в Рио</h2>
+  <h2 class="reveal">Стоимость 10 баночек</h2>
   <div class="card reveal d1 tablewrap">
     <table>
-      <thead><tr><th>Магазин</th><th>Крем</th><th>10 шт. Pix</th><th>10 шт. картой</th><th>Доставка в Рио</th></tr></thead>
+      <thead><tr><th>Вариант</th><th>Минеральный?</th><th>10 шт. по цене</th><th>Доставка</th><th>10 шт. можно?</th></tr></thead>
       <tbody>
-        <tr><td>Magalu</td><td>UV Clear SPF 46<br><span class="muted" style="font-size:14px">не 100% минеральный</span></td><td class="num"><b>$617,61</b><br><span class="muted">R$ 3 663,30</span></td><td class="num"><b>$664,09</b><br><span class="muted">R$ 3 939,00</span></td><td>Стоимость и срок не рассчитаны: на скриншоте не введён CEP. Международная покупка, налоги включены в цену.</td></tr>
-        <tr><td>Mercado Livre ×3</td><td class="muted">неизвестно</td><td class="muted">—</td><td class="muted">—</td><td class="muted">Данные не получены</td></tr>
+        <tr><td><b>ML · UV Restore SPF 40</b></td><td style="color:var(--ok)">✓ да</td><td class="num"><b>$408,13</b><br><span class="muted">R$ 2 420,80</span></td><td>Международная; условия и налоги на скриншоте не видны</td><td>Остаток не виден</td></tr>
+        <tr><td>ML · UV Clear 50,27 мл</td><td class="muted">нет</td><td class="num"><b>$461,98</b><br><span class="muted">R$ 2 740,20 + налоги</span></td><td>Бесплатно, 29.11–26.12, из США</td><td>Да, 50+</td></tr>
+        <tr><td>ML · UV Clear 48 г (JELI)</td><td class="muted">нет</td><td class="num">$421,49<br><span class="muted">R$ 2 500,00</span></td><td>Бесплатно, пт–сб</td><td style="color:var(--accent)">Нет, 1 шт.</td></tr>
+        <tr><td>Magalu · UV Clear 50 мл</td><td class="muted">нет</td><td class="num"><b>$617,61</b><br><span class="muted">R$ 3 663,30 (Pix)</span></td><td>Не рассчитана (нет CEP)</td><td>Не видно</td></tr>
       </tbody>
     </table>
   </div>
-  <div class="note reveal d2"><span class="i">!</span><div>Для 10 шт. цена за единицу просто умножена на 10. Можно ли заказать 10 шт. одним заказом и сколько это стоит с доставкой, видно только в корзине после ввода CEP: на скриншоте выбрано «1 unidade».</div></div>
+  <div class="note reveal d2"><span class="i">!</span><div><b>Налоги при заказе 10 шт. будут другими.</b> На международные покупки по Remessa Conforme налог считается от суммы всего заказа, поэтому R$ 0 пошлины за одну баночку не значит R$ 0 за десять. Точную сумму с пошлиной, ICMS и доставкой покажет только корзина после выбора 10 шт. Сроки «пт–сб» и «29.11–26.12» Mercado Livre считает по адресу в вашем аккаунте: если он не в Рио, проверьте с CEP Рио.</div></div>
 
   <div class="card reveal d3" style="margin-top:18px">
-    <h3 style="margin-bottom:10px">Что нужно, чтобы дополнить сравнение</h3>
+    <h3 style="margin-bottom:10px">Что делать</h3>
     <ol class="steps">
-      <li>Открыть каждую из трёх ссылок Mercado Livre, ввести CEP в Рио, выбрать 10 шт. и сделать скриншот цены, продавца, наличия и блока доставки.</li>
-      <li>В Magalu нажать «Calcular frete e prazo», ввести тот же CEP и сделать скриншот стоимости и срока.</li>
-      <li>Прислать скриншоты в чат. Страница обновится по этой же ссылке.</li>
+      <li>Открыть объявление <b>UV Restore SPF 40</b> на Mercado Livre, выбрать 10 шт. и посмотреть остаток, налоги и срок доставки в Рио.</li>
+      <li>Если 10 шт. нет или с налогами выходит слишком дорого, запасной вариант — UV Clear 50,27 мл на ML (в наличии 50+). Но этот крем не 100% минеральный.</li>
+      <li>Объявление JELI (осталась 1 шт.) и Magalu (самая высокая цена) для заказа 10 шт. не подходят.</li>
     </ol>
   </div>
 </section>
 
 <footer class="reveal">
-  <p>Курс: 1 USD = R$ 5,9314 (AwesomeAPI, курс покупки USD-BRL на 24.11.2026, 07:00 по времени Бразилии). Цены в реалах взяты со скриншота Magalu от 24.11.2026 и могут измениться.</p>
-  <p>Фото: UV Restore — <a href="https://incidecoder.com/products/eltamd-uv-restore-broad-spectrum-spf-40" target="_blank" rel="noopener">INCIDecoder</a>; UV Clear — фото, присланное пользователем. Котик: «Tabby cat-yawning-01», автор Hisashi, CC BY-SA 2.0, <a href="https://commons.wikimedia.org/wiki/File:Tabby_cat-yawning-01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
+  <p>Курс: 1 USD = R$ 5,9314 (AwesomeAPI, курс покупки USD-BRL на 24.11.2026, 07:00 по времени Бразилии). Цены в реалах взяты с ваших скриншотов Magalu и Mercado Livre от 24.11.2026 и могут измениться.</p>
+  <p>Фото: UV Restore (упаковка старого дизайна, 57 г; в объявлении ML — флакон-помпа 48 г) — <a href="https://incidecoder.com/products/eltamd-uv-restore-broad-spectrum-spf-40" target="_blank" rel="noopener">INCIDecoder</a>; UV Clear — фото, присланное пользователем. Котик: «Tabby cat-yawning-01», автор Hisashi, CC BY-SA 2.0, <a href="https://commons.wikimedia.org/wiki/File:Tabby_cat-yawning-01.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</p>
   <p>Это справка по составу и ценам, а не медицинская рекомендация.</p>
 </footer>
 </div>

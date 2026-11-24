@@ -45,7 +45,8 @@ section{margin-top:56px}
 
 /* products */
 .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-@media (max-width:760px){.grid2{grid-template-columns:1fr}}
+@media (max-width:760px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.actives.calc li{flex-direction:column;gap:2px}
 .prod{display:flex;flex-direction:column;gap:16px;position:relative}
 .prod.win{border-color:color-mix(in srgb,var(--ok) 55%,var(--line));box-shadow:0 0 0 1px color-mix(in srgb,var(--ok) 25%,transparent)}
 .photo{display:block;width:100%;aspect-ratio:1/1;border-radius:16px;background:#fff;border:0;padding:0;cursor:zoom-in;overflow:hidden}
@@ -120,7 +121,7 @@ footer a{color:var(--muted)}
 <header class="hero reveal">
   <span class="eyebrow">Солнцезащитный крем · 10 шт. · доставка в Рио-де-Жанейро</span>
   <h1>EltaMD UV Clear SPF 46 или UV Restore SPF 40</h1>
-  <p class="lead">Какой из двух кремов полностью минеральный, сколько стоят 10 баночек и что известно о доставке в Рио по ссылкам из Magalu и Mercado Livre. Цены пересчитаны в доллары.</p>
+  <p class="lead">Какой из двух кремов полностью минеральный, критична ли разница SPF 46 и 40, сколько стоят 10 баночек и что известно о доставке в Рио по ссылкам из Magalu и Mercado Livre. Цены пересчитаны в доллары.</p>
   <div class="verdict reveal d1">
     <div class="big">✓</div>
     <div>
@@ -155,6 +156,38 @@ footer a{color:var(--muted)}
       <p class="src">Состав по данным <a href="https://www.lookfantastic.com/p/11370303/" target="_blank" rel="noopener">LookFantastic</a>, <a href="https://shop.advancedderm.com/collections/eltamd/products/eltamd-uv-clear-broad-spectrum-spf-46-0-5-oz" target="_blank" rel="noopener">Advanced Derm</a> и <a href="https://bluemercury.com/collections/dry-skin-relief/products/eltamd-uv-clear-tinted-broad-spectrum-spf-46" target="_blank" rel="noopener">Bluemercury</a>. Октиноксат также называют ethylhexyl methoxycinnamate. Расхождение: <a href="https://ewg.org/sunscreen/about-the-sunscreens/1043829/EltaMD_UV_Clear_Face_sunscreen%2C_SPF_46" target="_blank" rel="noopener">EWG</a> для нетонированной версии указывает только цинк 9%. Точный ответ даст раздел «Drug Facts» на упаковке.</p>
     </article>
   </div>
+</section>
+
+<section>
+  <h2 class="reveal">Критична ли разница между SPF 46 и SPF 40?</h2>
+  <div class="verdict reveal d1" style="margin-top:0">
+    <div class="big">≈</div>
+    <div>
+      <b>Нет. Разница — около 0,3 процентного пункта блокировки UVB.</b>
+      <p>Оба крема выше SPF 30, который рекомендует Американская академия дерматологии, и оба имеют маркировку Broad Spectrum (защита от UVA и UVB). На практике важнее, сколько крема наносить.</p>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-top:18px">
+    <div class="card reveal d1">
+      <h3 style="margin-bottom:12px">Расчёт</h3>
+      <p class="muted" style="margin:0 0 12px;font-size:15px">SPF = во сколько раз меньше UVB доходит до кожи. До кожи проходит 1/SPF, блокируется 1 − 1/SPF.</p>
+      <ul class="actives calc">
+        <li><span class="muted" style="font-size:14px">SPF 40 (UV Restore)</span><span>пропускает 1/40 = 2,5% → <b>блокирует 97,5%</b></span></li>
+        <li><span class="muted" style="font-size:14px">SPF 46 (UV Clear)</span><span>пропускает 1/46 ≈ 2,17% → <b>блокирует ≈ 97,8%</b></span></li>
+      </ul>
+      <p class="src" style="margin-top:12px">Для сравнения, по данным <a href="https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/understand-sunscreen-labels" target="_blank" rel="noopener">AAD</a>, SPF 30 блокирует около 97% UVB. По данным <a href="https://www.health.harvard.edu/blog/new-sunscreen-labels-offer-clearer-sunburn-skin-cancer-information-201305216286" target="_blank" rel="noopener">Harvard Health</a>, SPF 50 блокирует около 98%. AAD также пишет, что более высокий SPF блокирует «немного больше» и что ни один крем не блокирует 100%.</p>
+    </div>
+    <div class="card reveal d2">
+      <h3 style="margin-bottom:12px">Что важнее цифры SPF</h3>
+      <ul class="steps" style="padding-left:20px;margin:0">
+        <li><b>Количество.</b> SPF на упаковке измеряют при 2 мг/см². Обычно люди наносят 0,5–1 мг/см² (<a href="https://pubmed.ncbi.nlm.nih.gov/22463921/" target="_blank" rel="noopener">PubMed 22463921</a>), и реальная защита падает вместе с количеством (<a href="https://pubmed.ncbi.nlm.nih.gov/19962787/" target="_blank" rel="noopener">PubMed 19962787</a>). Недонанесённый SPF 46 защитит хуже, чем SPF 40 в нормальном количестве.</li>
+        <li><b>Обновление.</b> AAD советует обновлять крем каждые 2 часа и сразу после купания или пота (<a href="https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen" target="_blank" rel="noopener">AAD</a>).</li>
+        <li><b>Тень и одежда.</b> AAD рекомендует их вместе с кремом, потому что ни один SPF не даёт 100% защиты.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="note reveal d3"><span class="i">!</span><div>Вывод для вашего выбора: если важен 100% минеральный состав, переход с SPF 46 на SPF 40 почти ничего не стоит в защите от UVB. Главное — наносить достаточно: <a href="https://www.aad.org/public/everyday-care/sun-protection/shade-clothing-sunscreen/how-to-apply-sunscreen" target="_blank" rel="noopener">AAD</a> советует не меньше 1 чайной ложки на лицо, это примерно полоска длиной в указательный и средний пальцы. Если у вас есть медицинские показания (розацеа, пигментация, фотосенсибилизирующие лекарства), уточните у дерматолога.</div></div>
 </section>
 
 <section>
